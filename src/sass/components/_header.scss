@@ -1,0 +1,36 @@
+.el-header {
+    padding: 28px 48px 28px 33px !important;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+
+    .logo-menu {
+        display: flex;
+
+        .menu-icon {
+            @include header-icons(28px, 26px, 2em);
+        }
+
+        h3 {
+            color: $main_color;
+            font-size: 21px;
+        }
+    }
+
+    .mail-noti-profile {
+        display: inline-flex;
+        list-style: none;
+
+        img {
+            @include header-icons(30px, 26px, 6em);
+        }
+
+        .demonstration {
+            margin: 0 3px 0 0;
+            padding: 19px 15px 19px;
+            background-color: rgba(28, 189, 180, 0.2);
+            border-radius: 50%;
+            color: $main_color;
+            font-weight: bold;
+            font-size: 26px;
+        }
+    }
+}

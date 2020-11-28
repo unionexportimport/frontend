@@ -1,13 +1,28 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/login">Login</router-link>
-  </div>
-  <router-view />
+  <Layout v-if="!checkRoute" />
+  <router-view v-if="checkRoute" />
 </template>
 
+<script>
+import Layout from "./layout/Layout";
+
+export default {
+  components: { Layout },
+
+  computed: {
+    checkRoute() {
+      if (this.$route.name == "Login") {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+};
+</script>
+
 <style lang="scss">
+@import "./sass/app";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

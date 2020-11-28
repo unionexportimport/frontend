@@ -1,0 +1,32 @@
+.el-aside {
+    margin-top: 20px !important;
+    position: fixed !important;
+    width: 176px;
+    height: 100vh;
+
+    .el-menu--collapse {
+        width: 85px;
+    }
+
+    .el-menu {
+        top: 19%;
+
+        .el-menu-item {
+            margin: 0 0 2em 0;
+
+            img {
+                @include header-icons(3em, unset, 3em);
+            }
+            span {
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+        .is-active {
+            color: $white;
+            background: $main_gradiant_color;
+            border-top-right-radius: 23px;
+            border-bottom-right-radius: 23px;
+        }
+    }
+}
