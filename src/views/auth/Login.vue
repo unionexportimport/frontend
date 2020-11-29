@@ -1,14 +1,14 @@
 <template>
   <div class="login">
     <el-row>
-      <el-col :span="12">
+      <el-col :span="10">
         <div class="login-bg">
           <div class="overlay">
             <h3>UNION EXPORT IMPORT</h3>
           </div>
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :span="14">
         <div class="login-form">
           <h3>Login</h3>
           <p class="login-contact">Don’t have an account? Please contact your <strong>Admin</strong></p>

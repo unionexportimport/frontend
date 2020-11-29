@@ -1,3 +1,7 @@
-@import '../components/header';
-@import '../components/sidebar';
-@import '../components/body';
+@import '../components/layout/header';
+@import '../components/layout/sidebar';
+@import '../components/layout/body';
+
+// custom
+@import '../components/custom/breadcrumb';
+@import '../components/custom/tabs';

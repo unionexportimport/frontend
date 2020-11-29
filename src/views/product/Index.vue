@@ -1,7 +1,7 @@
 <template>
   <el-breadcrumb separator-class="el-icon-arrow-right">
     <el-breadcrumb-item :to="{ path: '/' }" class="active-breadcrumb">Home Page</el-breadcrumb-item>
-    <el-breadcrumb-item>User Access Control</el-breadcrumb-item>
+    <el-breadcrumb-item>Product Management</el-breadcrumb-item>
   </el-breadcrumb>
 
   <el-tabs type="card">

@@ -26,9 +26,10 @@
           />
         </li>
         <li>
-          <span class="demonstration">AD</span>
           <el-dropdown trigger="click">
-            <span class="el-dropdown-link"><i class="el-icon-arrow-down el-icon--right"></i> </span>
+            <div class="demonstration">
+              AD<span class="el-dropdown-link"><i class="el-icon-arrow-down el-icon--right"></i> </span>
+            </div>
             <template #dropdown>
               <el-dropdown-menu>
                 <el-dropdown-item icon="el-icon-plus">Action 1</el-dropdown-item>
