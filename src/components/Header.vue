@@ -28,14 +28,26 @@
         <li>
           <span class="demonstration">AD</span>
           <el-dropdown trigger="click">
-            <span class="el-dropdown-link"><i class="el-icon-arrow-down el-icon--right"></i> </span>
+            <span class="el-dropdown-link"
+              ><i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
             <template #dropdown>
               <el-dropdown-menu>
-                <el-dropdown-item icon="el-icon-plus">Action 1</el-dropdown-item>
-                <el-dropdown-item icon="el-icon-circle-plus">Action 2</el-dropdown-item>
-                <el-dropdown-item icon="el-icon-circle-plus-outline">Action 3</el-dropdown-item>
-                <el-dropdown-item icon="el-icon-check">Action 4</el-dropdown-item>
-                <el-dropdown-item icon="el-icon-circle-check">Action 5</el-dropdown-item>
+                <el-dropdown-item icon="el-icon-plus"
+                  >Action 1</el-dropdown-item
+                >
+                <el-dropdown-item icon="el-icon-circle-plus"
+                  >Action 2</el-dropdown-item
+                >
+                <el-dropdown-item icon="el-icon-circle-plus-outline"
+                  >Action 3</el-dropdown-item
+                >
+                <el-dropdown-item icon="el-icon-check"
+                  >Action 4</el-dropdown-item
+                >
+                <el-dropdown-item icon="el-icon-circle-check"
+                  >Action 5</el-dropdown-item
+                >
               </el-dropdown-menu>
             </template>
           </el-dropdown>
@@ -50,7 +62,7 @@ export default {
   methods: {
     handleColapse() {
       this.$store.commit("handleCollapse");
-    },
-  },
+    }
+  }
 };
 </script>
