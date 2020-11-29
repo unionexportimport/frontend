@@ -19,14 +19,14 @@ import Sidebar from "../components/Sidebar";
 export default {
   data() {
     return {
-      collapse: false,
+      collapse: false
     };
   },
   methods: {
     handleCollapse() {
       this.collapse = !this.collapse;
-    },
+    }
   },
-  components: { Header, Sidebar },
+  components: { Header, Sidebar }
 };
 </script>
