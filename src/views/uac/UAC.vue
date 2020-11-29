@@ -5,7 +5,9 @@
   </el-breadcrumb>
 
   <el-tabs type="card">
-    <el-tab-pane label="Users">Users</el-tab-pane>
+    <el-tab-pane label="Users">
+      <UserList></UserList>
+    </el-tab-pane>
     <el-tab-pane label="Roles & Permission">
       <el-table :data="tableData" style="width: 100%">
         <el-table-column prop="date" label="Date" width="180"> </el-table-column>
@@ -17,7 +19,11 @@
 </template>
 
 <script>
+import UserList from "@/views/uac/UserList.vue";
 export default {
+  components: {
+    UserList,
+  },
   data() {
     return {
       tableData: [
