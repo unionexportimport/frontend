@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const Home = () => import("../views/Home.vue");
 const Login = () => import("../views/auth/Login.vue");
 const UAC = () => import("../views/uac/UAC.vue");
-
+const Customer=()=> import("../views/customer/Customer.vue");
 const routes = [
   {
     path: "/",
@@ -18,6 +18,11 @@ const routes = [
     path: "/user-access-control",
     name: "UAC",
     component: UAC
+  },
+  {
+    path:"/customer",
+    name:"Customer",
+    component:Customer
   },
   {
     path: "/about",

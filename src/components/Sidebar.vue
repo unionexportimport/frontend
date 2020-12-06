@@ -13,7 +13,7 @@
     </el-menu-item>
     <el-menu-item index="2">
       <i class="el-icon-menu"></i>
-      <template #title>Navigator Two</template>
+      <template #title>Customer</template>
     </el-menu-item>
     <el-menu-item index="4">
       <i class="el-icon-setting"></i>
