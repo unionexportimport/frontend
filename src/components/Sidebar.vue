@@ -17,7 +17,7 @@
       />
       <span>UAC</span>
     </el-menu-item>
-    <el-menu-item index="2">
+    <el-menu-item index="2" @click="Customer">
       <i class="el-icon-menu"></i>
       <template #title>Customer</template>
     </el-menu-item>
@@ -29,11 +29,12 @@
 </template>
 
 <script>
+import router from "../router";
 export default {
   computed: {
     isCollapse() {
       return this.$store.getters.getCollapse;
-    }
+    },
   },
   methods: {
     handleOpen() {
@@ -41,7 +42,10 @@ export default {
     },
     handleClose() {
       console.log("close");
-    }
-  }
+    },
+    Customer() {
+      router.push({ path: "/customer" });
+    },
+  },
 };
 </script>

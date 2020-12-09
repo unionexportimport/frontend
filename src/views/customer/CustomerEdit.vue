@@ -24,7 +24,7 @@
           <el-input v-model="form.email"></el-input>
         </el-form-item>
         <el-form-item label="Destination">
-           <el-input v-model="form.destination"></el-input>
+          <el-input v-model="form.destination"></el-input>
         </el-form-item>
       </el-col>
       <el-col :span="10" :offset="1">
@@ -38,7 +38,9 @@
     </el-row>
     <el-row>
       <el-col :span="2" :offset="17">
-        <el-button type="text" class="cancel_button">Cancel</el-button>
+        <el-button type="text" class="cancel_button" @click="Customer"
+          >Cancel</el-button
+        >
       </el-col>
       <el-col :span="2">
         <el-button class="submit_button">SUMMIT</el-button>
@@ -48,6 +50,7 @@
 </template>
 
 <script>
+import router from "../../router";
 export default {
   data() {
     return {
@@ -60,7 +63,15 @@ export default {
         fax_number: "",
       },
     };
-  }
+  },
+  methods: {
+    Customer() {
+      router.push({ path: "/customer" });
+    },
+    CustomerCreate() {
+      router.push({ name: "CustomerCreate" });
+    },
+  },
 };
 </script>
 
