@@ -1,5 +1,11 @@
 <template>
-  <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+  <el-menu
+    default-active="2"
+    class="el-menu-vertical-demo"
+    @open="handleOpen"
+    @close="handleClose"
+    :collapse="isCollapse"
+  >
     <el-menu-item index="1">
       <img
         v-if="$route.name == 'UAC'"
@@ -27,7 +33,7 @@ export default {
   computed: {
     isCollapse() {
       return this.$store.getters.getCollapse;
-    },
+    }
   },
   methods: {
     handleOpen() {
@@ -35,7 +41,7 @@ export default {
     },
     handleClose() {
       console.log("close");
-    },
-  },
+    }
+  }
 };
 </script>
