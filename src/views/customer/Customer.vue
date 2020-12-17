@@ -3,34 +3,32 @@
     <el-breadcrumb-item :to="{ path: '/' }" class="active-breadcrumb"
       >Home Page</el-breadcrumb-item
     >
-    <el-breadcrumb-item>User Access Control</el-breadcrumb-item>
+    <el-breadcrumb-item :to="Customer"> Customer</el-breadcrumb-item>
   </el-breadcrumb>
 
   <el-tabs type="card" @tab-click="handleClick">
-    <el-row>
-      <el-col :span="18"></el-col>
-      <el-col :span="6">
-        <el-button type="primary" :to="{ name: 'UserEdit' }">New User</el-button>
-      </el-col>
-    </el-row>
-    <el-tab-pane label="Users">
-      <UserList></UserList>
+    <el-button class="rear_bg " @click="CustomerCreate">New Customer</el-button>
+    <el-tab-pane label="Customer">
+      <CustomerList />
     </el-tab-pane>
-    <el-tab-pane label="Roles & Permission">
+    <!-- <el-tab-pane label="Roles & Permission">
       <el-table :data="tableData" style="width: 100%">
-        <el-table-column prop="date" label="Date" width="180"> </el-table-column>
-        <el-table-column prop="name" label="Name" width="180"> </el-table-column>
+        <el-table-column prop="date" label="Date" width="180">
+        </el-table-column>
+        <el-table-column prop="name" label="Name" width="180">
+        </el-table-column>
         <el-table-column prop="address" label="Address"> </el-table-column>
       </el-table>
-    </el-tab-pane>
+    </el-tab-pane> -->
   </el-tabs>
 </template>
 
 <script>
-import UserList from "@/views/uac/UserList.vue";
+import CustomerList from "./CustomerList";
+import router from "../../router";
 export default {
   components: {
-    UserList,
+    CustomerList,
   },
   data() {
     return {
@@ -57,6 +55,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    Customer() {
+      router.push({ path: "/customer" });
+    },
+    CustomerCreate() {
+      router.push({ name: "CustomerCreate" });
+    },
   },
 };
 </script>
