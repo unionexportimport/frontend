@@ -7,6 +7,7 @@
     color: $color;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 @mixin header-icons($width, $height, $mr) {
@@ -14,4 +15,10 @@
     height: $height;
     margin-right: $mr;
     cursor: pointer;
+}
+
+@mixin font-style($size, $color, $style: 'normal') {
+    font-size: $size;
+    font-weight: $style;
+    color: $color;
 }
