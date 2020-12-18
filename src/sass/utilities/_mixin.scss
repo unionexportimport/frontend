@@ -16,3 +16,9 @@
     margin-right: $mr;
     cursor: pointer;
 }
+
+@mixin font-style($size, $color, $style: 'normal') {
+    font-size: $size;
+    font-weight: $style;
+    color: $color;
+}
